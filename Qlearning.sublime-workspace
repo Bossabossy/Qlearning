@@ -519,6 +519,22 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "Strawry/__init__.py",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Strawry/env.py",
+			"settings":
+			{
+				"buffer_size": 2251,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -690,6 +706,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"cap",
 			"),\n",
 			"floatField",
 			"Sensors",
@@ -816,8 +833,7 @@
 			"pid49",
 			"today",
 			"p=json.loads(p_json)\n	e=Employee.objects.get(pk=p[\"employee_id\"])\n	qs=[]\n	qs.append( Q( customer__queue__collector = e ) )",
-			"e=Employee.objects.get(pk=p[\"employee_id\"])	\n	qs=[]\n	qs.append( Q( customer__queue__collector = e ) )",
-			"p=json.loads(p_json)\n	e=Employee.objects.get(pk=p[\"employee_id\"])	\n	qs=[]\n	qs.append( Q( customer__queue__collector = e ) )"
+			"e=Employee.objects.get(pk=p[\"employee_id\"])	\n	qs=[]\n	qs.append( Q( customer__queue__collector = e ) )"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -857,8 +873,63 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "Strawry/__init__.py",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Strawry/env.py",
+					"settings":
+					{
+						"buffer_size": 2251,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2251,
+								2251
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
