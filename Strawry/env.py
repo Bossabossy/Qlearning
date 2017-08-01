@@ -48,7 +48,7 @@ class Env(object):
         if self.t_temp-1<self.temp and self.temp<=self.t_temp+1:
             if self.t_humi-5<self.humi and self.humi<=self.t_humi+5:
                 return 1         
-        return -0.1
+        return 0
     
     def code2int(self,code):
         #(comp,mist,light,watp)
