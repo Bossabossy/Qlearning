@@ -1,3 +1,6 @@
+
+import numpy as np
+
 class Env(object):
     """
         Strawry environment ...
@@ -26,7 +29,7 @@ class Env(object):
         return int(x1*5*5*2*2 + x2*5*2*2 + x3*2*2 + x4*2 +x5)
 
     
-    def reset(self, temp=25, humi=80, co2=200, light=0, watp=0):        
+    def reset(self, temp=25, humi=50, co2=350, light=0, watp=0):        
         self.temp=temp
         self.humi=humi
         self.co2=co2
@@ -45,11 +48,12 @@ class Env(object):
         return self.get_state()
     
     def get_reward(self):
-        if self.t_temp-1<self.temp and self.temp<=self.t_temp+1:
-            if self.t_humi-5<self.humi and self.humi<=self.t_humi+5:
+        if self.t_temp-2<self.temp and self.temp<=self.t_temp+2:
+            if self.t_humi-10<self.humi and self.humi<=self.t_humi+10:
                 return 1         
         return 0
-    
+        #return np.log(np.sqrt(((self.t_temp-self.temp)**2)+((self.t_humi-self.humi)**2)))
+
     def code2int(self,code):
         #(comp,mist,light,watp)
         return code[0]*8 + code[1]*4 + code[2]*2 + code[3]
