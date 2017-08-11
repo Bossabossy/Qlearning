@@ -20,6 +20,7 @@ class Env(object):
         self.max_step=100
         self.reset()
 
+            
     def get_state(self):        
         x1=self.cap(self.temp, 10, 25, 5)
         x2=self.cap(self.humi, 10, 100, 5)
